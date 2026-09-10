@@ -1,0 +1,28 @@
+body {
+     background: black;
+
+     min-height: 100vh;
+
+    background-size: 1000px 1000px;
+
+     animation: movingBackground linear 10s infinite;
+ }
+
+.title{
+    color: white;
+    text-align: center;
+}
+
+@keyframes movingBackground {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 1000px 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
