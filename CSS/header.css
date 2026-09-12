@@ -1,0 +1,23 @@
+.header{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.header-logo{
+    width: 70%;
+    min-width: 200px;
+    border-radius: 30px;
+
+    -webkit-mask-image: radial-gradient(
+            ellipse,
+            black 60%,
+            transparent 10%
+    );
+
+    mask-image: radial-gradient(
+            ellipse,
+            black 80%,
+            transparent 100%
+    );
+}

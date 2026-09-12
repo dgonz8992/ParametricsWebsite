@@ -1,28 +1,47 @@
-body {
-     background: black;
-
-     min-height: 100vh;
-
-    background-size: 1000px 1000px;
-
-     animation: movingBackground linear 10s infinite;
- }
-
-.title{
-    color: white;
-    text-align: center;
+body{
+    font-family: Garamond, serif
 }
 
-@keyframes movingBackground {
+body::before {
+    content: "";
+    position: fixed;
+    inset: -30%;
+
+    background: url("../Background Images/Parametrics_Backgrounds_1.jpeg")
+    center / cover no-repeat;
+
+    transform-origin: center center;
+    z-index: -1;
+
+    animation: liquidBackground 22s ease-in-out infinite;
+}
+
+@keyframes liquidBackground {
     0% {
-        background-position: 0 0;
+        transform: scale(1) translate(0%, 0%) rotate(0deg);
     }
 
-    50% {
-        background-position: 1000px 0;
+    18% {
+        transform: scale(0.94) translate(-3%, 1%) rotate(2deg);
+    }
+
+    37% {
+        transform: scale(0.86) translate(-6%, -2%) rotate(-3deg);
+    }
+
+    58% {
+        transform: scale(0.90) translate(-4%, -4%) rotate(4deg);
+    }
+
+    76% {
+        transform: scale(0.95) translate(-7%, 1%) rotate(-2deg);
+    }
+
+    90% {
+        transform: scale(0.98) translate(-2%, 2%) rotate(1deg);
     }
 
     100% {
-        background-position: 0 0;
+        transform: scale(1) translate(0%, 0%) rotate(0deg);
     }
 }

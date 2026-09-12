@@ -1,0 +1,28 @@
+.firstLink{
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0;
+    inset: 0;
+
+}
+
+.first-link-text{
+    flex: 1.5;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+
+.first-link-img-container{
+    flex: 1;
+}
+
+.first-link-img{
+    width: clamp(100px, 600px, 400px);
+    border: 2px #3e5afd solid;
+
+}
+
