@@ -1,47 +1,111 @@
-body{
-    font-family: Garamond, serif
+body {
+    margin: 0;
+    background: black;
+    overflow-x: hidden;
 }
 
-body::before {
-    content: "";
+.background {
     position: fixed;
-    inset: -30%;
-
-    background: url("../Background Images/Parametrics_Backgrounds_1.jpeg")
-    center / cover no-repeat;
-
-    transform-origin: center center;
+    inset: 0;
+    overflow: hidden;
     z-index: -1;
-
-    animation: liquidBackground 22s ease-in-out infinite;
+    background: #050505;
 }
 
-@keyframes liquidBackground {
+.blob {
+    position: absolute;
+    width: 55vw;
+    height: 55vw;
+    border-radius: 50%;
+
+    filter: blur(90px);
+    opacity: 0.9;
+
+    animation:
+            moveBlob 18s ease-in-out infinite alternate,
+            morphBlob 10s ease-in-out infinite alternate;
+}
+
+.blob1 {
+    background: #ff009d;
+    top: -15%;
+    left: -10%;
+}
+
+.blob2 {
+    background: #291cff;
+    top: 15%;
+    left: 20%;
+    animation-delay: -4s;
+}
+
+.blob3 {
+    background: #ff006f;
+    bottom: -20%;
+    left: -50%;
+    animation-delay: -7s;
+}
+
+.blob4 {
+    background: #00d5ff;
+    top: -20%;
+    right: -10%;
+    animation-delay: -10s;
+}
+
+.blob5 {
+    background: #00c6c6;
+    bottom: 0;
+    right: -20%;
+    animation-delay: -13s;
+}
+
+@keyframes moveBlob {
     0% {
-        transform: scale(1) translate(0%, 0%) rotate(0deg);
+        transform:
+                translate(0, 0)
+                scale(1)
+                rotate(0deg);
     }
 
-    18% {
-        transform: scale(0.94) translate(-3%, 1%) rotate(2deg);
+    33% {
+        transform:
+                translate(10vw, 8vh)
+                scale(1.15)
+                rotate(30deg);
     }
 
-    37% {
-        transform: scale(0.86) translate(-6%, -2%) rotate(-3deg);
-    }
-
-    58% {
-        transform: scale(0.90) translate(-4%, -4%) rotate(4deg);
-    }
-
-    76% {
-        transform: scale(0.95) translate(-7%, 1%) rotate(-2deg);
-    }
-
-    90% {
-        transform: scale(0.98) translate(-2%, 2%) rotate(1deg);
+    66% {
+        transform:
+                translate(-8vw, 15vh)
+                scale(0.9)
+                rotate(70deg);
     }
 
     100% {
-        transform: scale(1) translate(0%, 0%) rotate(0deg);
+        transform:
+                translate(15vw, -5vh)
+                scale(1.2)
+                rotate(120deg);
+    }
+}
+
+@keyframes morphBlob {
+    0% {
+        border-radius:
+                60% 40% 55% 45% /
+            50% 60% 40% 50%;
+    }
+
+    50% {
+        border-radius:
+                40% 60% 35% 65% /
+            65% 35% 60% 40%;
+    }
+
+    100% {
+        border-radius:
+                55% 45% 65% 35% /
+            40% 60% 35% 65%;
     }
 }
