@@ -6,11 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ddcef020-d95e-4bce-af74-fc64cb874fe9" name="Changes" comment="Update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Background Images/Screenshot 2026-09-11 at 9.57.47 AM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/firstLink.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/firstLink.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/general.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/general.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +22,10 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3,
