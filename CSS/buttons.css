@@ -1,0 +1,27 @@
+.buttonContainer{
+    position: fixed;
+    top: 27px;
+    display: flex;
+    width: 100%;
+    z-index: 500;
+    align-items: center;
+}
+
+.headerButtonContainer{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerButton{
+    width: 50%;
+    background: none;
+    color: white;
+    font-size: clamp(20px, 2vw, 4vw);
+    font-weight: bold;
+    border: white solid 2px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+}

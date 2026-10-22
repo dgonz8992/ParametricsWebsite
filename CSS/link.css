@@ -1,26 +1,26 @@
-.firstLink{
+.link{
     display: flex;
     height: 500px;
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
-    margin: 0 50px 10px;
+    margin: 0 50px 50px;
     border-radius: 50px;
 
 }
 
-.first-link-text-container{
-    flex: 1.5;
+.link-text-container{
+    flex: 1;
     font-size: 40px;
     color: white;
     text-align: center;
     border: 2px ;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.first-link-text-button{
-    flex: 0.4;
+.link-text-button{
     min-width: 150px;
     height: 80px;
 
@@ -31,23 +31,35 @@
     font-weight: bold;
     color: white;
 
+    padding: 20px;
     background-color: transparent;
 
     cursor: pointer;
 }
 
-.first-link-img-button{
+.link-img-button{
     flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: none;
     cursor: pointer;
 }
 
-.first-link-img{
+.link-img{
     width: clamp(200px, 70%, 400px);
     border: 2px #3e5afd solid;
 }
 
-.first-link-img:hover{
+.link-img:hover{
     opacity: .7;
+}
+
+.link-video{
+    width: 90%;
+    max-width: 560px;
+    height: auto;
+    border: none;
+    aspect-ratio: 16/9;
 }
 
