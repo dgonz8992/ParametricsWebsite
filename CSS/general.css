@@ -18,8 +18,11 @@ body {
     height: 55vw;
     border-radius: 50%;
 
-    filter: blur(90px);
+    filter: blur(70px);
     opacity: 0.9;
+
+    will-change: transform;
+    backface-visibility: hidden;
 
     animation:
             moveBlob 18s ease-in-out infinite alternate,
@@ -63,28 +66,28 @@ body {
 @keyframes moveBlob {
     0% {
         transform:
-                translate(0, 0)
+                translate3d(0, 0, 0)
                 scale(1)
                 rotate(0deg);
     }
 
     33% {
         transform:
-                translate(10vw, 8vh)
+                translate3d(10vw, 8vh, 0)
                 scale(1.15)
                 rotate(30deg);
     }
 
     66% {
         transform:
-                translate(-8vw, 15vh)
+                translate3d(-8vw, 15vh, 0)
                 scale(0.9)
                 rotate(70deg);
     }
 
     100% {
         transform:
-                translate(15vw, -5vh)
+                translate3d(15vw, -5vh, 0)
                 scale(1.2)
                 rotate(120deg);
     }
@@ -107,5 +110,11 @@ body {
         border-radius:
                 55% 45% 65% 35% /
             40% 60% 35% 65%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .blob {
+        animation: none;
     }
 }

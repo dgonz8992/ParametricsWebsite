@@ -23,18 +23,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;dgonz8992&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/dgonz8992/ParametricsWebsite.git&quot;,
-    &quot;accountId&quot;: &quot;537e462e-bf59-4d4f-b964-3463d377b4f3&quot;
-  }
-}</component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3,
   &quot;fromUser&quot;: false
@@ -71,7 +63,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-WS-262.9437.145" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-WS-261.26222.58" />
       </set>
     </attachedChunks>
   </component>
@@ -89,8 +81,6 @@
       <workItem from="1789066415446" duration="6043000" />
       <workItem from="1789134904986" duration="4156000" />
       <workItem from="1789165203946" duration="7328000" />
-      <workItem from="1789259767708" duration="34000" />
-      <workItem from="1792630523058" duration="603000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <option name="closed" value="true" />
